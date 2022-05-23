@@ -7,25 +7,26 @@
     <title>Pagina web SantiagoRG</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
+    <header class="header" id="inicio">
+        <img src="img/hamburguesa.svg" alt="" class="hamburguer">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre mi">Sobre mi</a>
+            <a href="#hablidades">Habilidades</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
         </nav>
         <section class="textos-header">
             <h1>HOLA, MI NOMBRE ES SANTIAGO RIVAS GOMEZ</h1>
             <H2>ESTUDIANTE DE INGENIERIA DE SOFTWARE</H2>
         </section>
-        <div class="wave"style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.54,99.19 C242.37,148.53 392.49,-74.48 505.36,94.25 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #222831;"></path></svg></div>
     </header>
     <main>
-        <section class="Contenedor Sobre-mi">
-            <h2 class="titulo">Sobre mi</h2> 
+        <section class="Contenedor Sobre-mi" id="sobre mi">
+            <h2 class="titulo">SOBRE MI</h2> 
             <div class="contenedor-sobre-mi">
                 <img src="img/perfil.jpeg" alt="" class="imganen-sobre-mi">
                 <div class="cotenido-texto">
@@ -46,9 +47,9 @@
                     </div>
             </div>        
         </section>
-        <section class="Habilidades">
+        <section class="Habilidades" id="hablidades">
             <div class="contenedor">
-                <h2 class="titulo">Habilidades</h2>
+                <h2 class="titulo">HABILIDADES</h2>
                 <div class="galeria-hab">
                     <div class="imagen-hab">
                         <img src="img/html.png" alt="">
@@ -75,8 +76,8 @@
             </div>
         </section>
         
-        <form class="form" action="https://formspree.io/f/xzboobba"
-        method="POST">
+        <form class="form" action="https://formspree.io/f/xzboobba "
+        method="POST" id="contacto">
             <div class="form_container">
                 <h2 class="form_titulo">Contácteme</h2>
                 <input type="text" classs="form_input" placeholder="Nombre:" name="name">
@@ -92,15 +93,31 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Celular</h4>
-                <p>3156192989</p>
+                <h4>Creado por</h4>
+                <p>Santiago Rivas </p>
             </div>
             <div class="content-foo">
                 <h4>E-mail</h4>
-                <p>santirivasgomez@hotmail.com</p>
+                <p>santiagorg218@gmail.com</p>
             </div>
+
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+
         </div>
         <h2 class="titulo-final">&copy; SantiagoRG | Santiago Rivas Gomez</h2>
+        <div class="line"></div>
     </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>  
 </body>
 </html>
