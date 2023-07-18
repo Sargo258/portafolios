@@ -6,7 +6,7 @@
 
 body{
     font-family: 'open sans';
-    background-color: #222831;
+    background-color: #0c1118;
 }
 
 .contenedor{
@@ -239,15 +239,19 @@ nav .logo {
     flex-wrap: wrap;
 }
 
+
 .logoG{
     display: block;
     width: 70px;
     height: 70px;
     cursor: pointer;
-    transition: all ease-in-out .3s;
+    transition: box-shadow 0.3s;
     margin: auto;
 }
 
+.logoG :hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 .galeria-proyectos{
     display: flex;
